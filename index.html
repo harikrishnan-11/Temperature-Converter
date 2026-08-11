@@ -5,49 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temprature convertor</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="wrapper">
-
-        <h1> INSTANT TEMPERATURE CONVERTER</h1>
-        <p>Convert all type of temperature smoothly.</p>
+        <div class="head">
+            <h1> INSTANT TEMPERATURE CONVERTER</h1>
+            <p>Convert all type of temperature smoothly.</p>
+        </div>
 
         <div class="container">
 
-            <div class="left">
+            <div class="box">
 
                 <p>From</p>
 
                 <div class="inner-box">
-                    
+
                     <p id="from">Celsius (<sup>o</sup>C)</p>
 
-                    <input type="number" id="input" value="1" class="input">
+                    <input type="number" id="input" value="" class="input" placeholder="0 " maxlength="10" >
 
-                    <p class="placeHolder">Enter Value...</p>
-
+                    
                 </div>
+                <p class="placeHolder">Enter Value...</p>
 
             </div>
 
             <div class="center">
-                <p id="From"> (<sup>o</sup>C) </p> <span> = </span> <p id="To"> (<sup>o</sup>F)</p>
+                <div >Select</div>
+                <div class="menu">
+
+
+                    <p id="From"> <sup>o</sup>C </p> <span> = </span>
+                    <p id="To"> <sup>o</sup>F</p>
+                </div>
             </div>
 
-            <div class="right">
+            <div class="box">
 
                 <p>To</p>
 
                 <div class="inner-box">
 
-                    <p id="To">Celsius (<sup>o</sup>C)</p>
+                    <p id="To">fahrenheit (<sup>o</sup>F)</p>
 
-                    <input type="number" id="input" value="1" class="input">
+                    <input type="text" id="output" value="" class="input" placeholder="0" readonly>
 
-                    <p class="placeHolder">Enter Value...</p>
-
+                    
                 </div>
+                <p class="placeHolder" >Result...</p>
 
             </div>
         </div>
@@ -55,7 +63,7 @@
     </div>
 
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>
